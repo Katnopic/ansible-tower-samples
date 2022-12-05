@@ -1,0 +1,7 @@
+---
+- name: debug
+  debug:
+    msg: "Pause number {{ item }}"
+- name: pause
+  pause:
+    minutes: "{{ pause }}"
