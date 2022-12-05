@@ -2,8 +2,8 @@
   hosts: all
   vars:
     pause: 2
-    loop: 400
+    loop_count: 400
   tasks:
   - name: "Pause {{ pause }} seconds"
     include_tasks: pause-task.yml
-    loop: "{{ query('sequence', 'start=1 end={{loop}}') }}"
+    loop: "{{ query('sequence', 'start=1 end={{ loop_count }}') }}"
