@@ -1,8 +1,8 @@
 - name: Hello World Sample
   hosts: all
   vars:
-    pause: 5
-    loop: 25
+    pause: 2
+    loop: 400
   tasks:
   - name: "Pause {{ pause }} minutes"
     include_tasks: pause-task.yml
