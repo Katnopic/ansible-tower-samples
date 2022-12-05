@@ -4,6 +4,6 @@
     pause: 2
     loop: 400
   tasks:
-  - name: "Pause {{ pause }} minutes"
+  - name: "Pause {{ pause }} seconds"
     include_tasks: pause-task.yml
     loop: "{{ query('sequence', 'start=1 end={{loop}}') }}"
