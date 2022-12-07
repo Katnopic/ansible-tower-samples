@@ -2,7 +2,7 @@
   hosts: all
   vars:
     pause: 4
-    loop_count: 100
+    loop_count: 200
   tasks:
   - name: "Pause {{ pause }} seconds"
     include_tasks: pause-task.yml
